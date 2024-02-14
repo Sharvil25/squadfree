@@ -1,0 +1,40 @@
+<section class="Herosection d-flex justify-content-center align-items-center">
+  <div class="container">
+    <div class="welcome d-flex flex-column align-items-center">
+      <h1 class="mb-2">WELCOME TO SQUAD</h1>
+      <h3 class="mb-5">
+        WE ARE TEAM OF TALENTED DESIGNERS MAKING WEBSITES WITH BOOTSTRAP
+      </h3>
+      <i
+        class="fa-solid fa-angles-down d-flex justify-content-center align-items-center"
+      ></i>
+    </div>
+  </div>
+</section>
+
+<section class="aboutsection">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h1 class="text-dark-blue mb-4">
+          Voluptatem dignissimos provident quasi
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute
+          irure dolor in reprehenderit
+        </p>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="row">
+          <div class="col-md-6 mb-5" *ngFor="let i of aboutdata">
+            <i [class]="i.iclass"></i>
+            <h4>{{ i.name }}</h4>
+            <p class="desc">{{ i.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

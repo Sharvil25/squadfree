@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+:root {
+  --dark-blue: #67b0d1;
+  --text-dark-blue: #2f4d5a;
+}
+
+.text-dark-blue {
+  color: var(--text-dark-blue);
+}
+
+.section-title {
+  position: relative;
+  font-weight: bold;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 122px;
+  height: 66px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(/assets/img/section-title-bg.png);
+  background-repeat: no-repeat;
+  z-index: -1;
+}

@@ -1,0 +1,18 @@
+header {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.navtab a {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+.fixed-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}

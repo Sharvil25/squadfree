@@ -1,0 +1,35 @@
+.servicesection {
+  padding: 60px 0;
+}
+.servicesection i {
+  font-size: 40px;
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+}
+
+.servicecard {
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicecard::before {
+  content: "";
+  position: absolute;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.servicecard:hover * {
+  color: white;
+}
+.servicecard:hover:before {
+  background: #67b0d1;
+  top: 0;
+}
