@@ -29,7 +29,7 @@
 .servicecard:hover * {
   color: white;
 }
-.servicecard:hover:before {
+.servicecard:hover::before {
   background: #67b0d1;
   top: 0;
 }

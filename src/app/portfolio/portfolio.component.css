@@ -1,0 +1,19 @@
+.portfoliosection {
+  padding: 60px 0;
+}
+
+.selection ul {
+  background: #ecf5f9;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.portfolio-images img {
+  width: 100%;
+}
+
+.activetab {
+  color: var(--dark-blue);
+}
+
+

@@ -1,1 +1,32 @@
-<p>portfolio works!</p>
+<section class="portfoliosection">
+  <div class="container">
+    <h2 class="py-4 section-title text-center text-dark-blue">Portfolio</h2>
+    <p class="text-center pb-3">
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+      aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+      quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+      sit in iste officiis commodi quidem hic quas.
+    </p>
+
+    <div class="selection d-flex justify-content-center">
+      <ul class="d-flex gap-4 justify-content-center align-items-center">
+        <li
+          
+          *ngFor="let i of selectiontab"
+          [class.activetab]="currentTab == i"
+          (click)="setFilteredImages(i)"
+        >
+          {{ i }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="portfolio-images">
+      <div class="row">
+        <div class="col-lg-4 mb-4" *ngFor="let i of filterImages">
+          <img [src]="i.img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

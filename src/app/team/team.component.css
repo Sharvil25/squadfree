@@ -1,0 +1,46 @@
+.teamsection {
+  padding: 60px 0 100px;
+}
+
+.team-images img {
+  width: 100%;
+}
+
+.single-member,
+.info h5 {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  width: 85%;
+  height: 90px;
+  overflow: hidden;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -45px);
+  background-color: white;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.info p {
+  font-size: 14px;
+}
+
+.info h5::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: var(--dark-blue);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.info:hover {
+  height: 130px;
+}
+.social-media i {
+  font-size: 16px;
+  color: var(--dark-blue);
+}
