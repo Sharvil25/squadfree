@@ -1,0 +1,41 @@
+.footer {
+  background: #263f49;
+  color: white;
+  position: relative;
+}
+
+.Squad-Details {
+  background-color: white;
+  color: #2f4d5a;
+  border-top: 5px solid var(--dark-blue);
+  margin-top: -80px;
+  padding: 20px;
+}
+
+.icons i {
+  font-size: 20px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-dark-blue);
+  color: white;
+}
+
+.subscribe input {
+  flex: 1;
+}
+
+.subscribe button {
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+.footer .row {
+  border-bottom: 1px solid var(--dark-blue);
+  padding-bottom: 25px;
+}

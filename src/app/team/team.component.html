@@ -10,13 +10,17 @@
 
     <div class="team-images">
       <div class="row">
-        <div class="col-lg-4 mb-4 single-member" *ngFor="let i of teamImage">
+        <div
+          class="col-lg-4 single-member"
+          *ngFor="let i of teamImage"
+          style="margin-bottom: 100px"
+        >
           <img [src]="i.img" />
           <div class="info text-center p-3">
             <h5 class="mb-3">{{ i.name }}</h5>
             <p>{{ i.position }}</p>
             <div class="d-flex justify-content-center gap-3">
-              <div *ngFor="let social of i.socialMedia" class="social-media ">
+              <div *ngFor="let social of i.socialMedia" class="social-media">
                 <a [routerLink]="social.path"><i [class]="social.icon"></i></a>
               </div>
             </div>

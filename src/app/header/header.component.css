@@ -16,3 +16,35 @@ header {
   right: 0;
   background-color: transparent;
 }
+
+.mobile-Navbar {
+  position: fixed;
+  inset: 0;
+  padding: 60px 20px 20px;
+  background-color: var(--dark-blue);
+  z-index: 99;
+}
+
+.mobile-Navbar .fa-xmark {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-Navbar ul {
+  background-color: white;
+  height: 100%;
+  padding: 20px;
+}
+
+.mobile-Navbar a {
+  color: black;
+}
+
+.mobile-Navbar a:hover,
+.mobile-Navbar a.active-link {
+  color: var(--dark-blue);
+}

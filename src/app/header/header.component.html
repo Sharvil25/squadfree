@@ -4,11 +4,26 @@
       <div>
         <h3>SQUADFREE</h3>
       </div>
-      <ul class="d-flex gap-5 navtab m-0">
+      <ul class="d-lg-flex gap-5 navtab m-0 d-none">
         <li *ngFor="let i of navtabs">
           <a [routerLink]="i.url">{{ i.name }}</a>
         </li>
       </ul>
+      <i
+        class="fa-solid fa-bars d-block d-lg-none"
+        (click)="toggleIsMobolieDisplay()"
+      ></i>
     </div>
   </div>
 </header>
+
+<div class="mobile-Navbar d-block d-lg-none" *ngIf="isMobolieDisplay">
+  <i class="fa-solid fa-xmark" (click)="toggleIsMobolieDisplay()"></i>
+  <ul>
+    <li *ngFor="let i of navtabs" class="mb-2" (click)="hideMobileDropdown()">
+      <a [routerLink]="i.url" [class.active-link]="currentRoute == i.url">{{
+        i.name
+      }}</a>
+    </li>
+  </ul>
+</div>

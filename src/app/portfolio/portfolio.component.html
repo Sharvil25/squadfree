@@ -11,7 +11,6 @@
     <div class="selection d-flex justify-content-center">
       <ul class="d-flex gap-4 justify-content-center align-items-center">
         <li
-          
           *ngFor="let i of selectiontab"
           [class.activetab]="currentTab == i"
           (click)="setFilteredImages(i)"
@@ -25,6 +24,70 @@
       <div class="row">
         <div class="col-lg-4 mb-4" *ngFor="let i of filterImages">
           <img [src]="i.img" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="py-4 section-title text-center text-dark-blue">Testimonials</h2>
+    <p class="text-center pb-3">
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+      aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+      quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+      sit in iste officiis commodi quidem hic quas.
+    </p>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="position-detail mb-5 text-center p-3">
+          <p>
+            <span class="quotes"><i class="fa-solid fa-quote-left"></i></span>
+            Enim nisi quem export duis labore cillum quae magna enim sint quorum
+            nulla quem veniam duis minim tempor labore quem eram duis noster
+            aute amet eram fore quis sint minim.
+            <span class="quotes"><i class="fa-solid fa-quote-right"></i></span>
+          </p>
+        </div>
+        <div class="position-image text-center">
+          <img src="/assets/img/testimonials/testimonials-2.jpg" />
+          <h5 class="pt-2">Sarah Willson</h5>
+          <p>Designer</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="position-detail mb-5 text-center p-3">
+          <p>
+            <span class="quotes"><i class="fa-solid fa-quote-left"></i></span>
+            Enim nisi quem export duis labore cillum quae magna enim sint quorum
+            nulla quem veniam duis minim tempor labore quem eram duis noster
+            aute amet eram fore quis sint minim.
+            <span class="quotes"><i class="fa-solid fa-quote-right"></i></span>
+          </p>
+        </div>
+        <div class="position-image text-center">
+          <img src="/assets/img/testimonials/testimonials-3.jpg" />
+          <h5 class="pt-2">jenna Karlis</h5>
+          <p>Store Owner</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="position-detail mb-5 text-center p-3">
+          <p>
+            <span class="quotes"><i class="fa-solid fa-quote-left"></i></span>
+            Enim nisi quem export duis labore cillum quae magna enim sint quorum
+            nulla quem veniam duis minim tempor labore quem eram duis noster
+            aute amet eram fore quis sint minim.
+            <span class="quotes"><i class="fa-solid fa-quote-right"></i></span>
+          </p>
+        </div>
+        <div class="position-image text-center">
+          <img src="/assets/img/testimonials/testimonials-4.jpg" />
+          <h5 class="pt-2">Matt Brandon</h5>
+          <p>Freelancer</p>
         </div>
       </div>
     </div>
